@@ -1,53 +1,56 @@
-/* header {
-
-} */
-body {
-    margin: 0;
-    padding: 0;
-}
+/* Styling Page */
 
 * {
     box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
 }
 
-.abot {
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+
+/* header {
+
+} */
+
+
+
+
+/* Styling Company Section */
+.company {
     background-image: url(./images/abotbg.jpg);
     background-position: 20.61% 73.51%;
-    background-size: auto 110%;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 30px 0 30px 30px;
-    font-family: 'Ubuntu', sans-serif;
-    /* min-height: 90vh; */
+    padding: 30px;
 }
 
-.abot-box {
+.company-box {
     padding: 60px 0 80px 25%;
 }
 
-.abot h3 {
-    text-transform: uppercase;
-    letter-spacing: 12px;
+.company h3 {
     font-size: 1.875rem;
     font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 12px;
     margin: 0 auto 0 0;
-    /* font-family: 'Ubuntu', sans-serif; */
     color: #ffffff;
+    line-height: 1.5;
 }
 
-.abot h1 {
-    font-family: 'Ubuntu', sans-serif;
+.company h1 {
     text-transform: uppercase;
     font-size: 6.875rem;
-    line-height: 1;
+    line-height: 1.05;
     background-image: none;
     text-shadow: 4px 4px 0px rgb(119 81 67 / 40%);
     margin: 20px 0 30px 0;
     word-wrap: break-word;
     color: #ffffff;
     max-width: 570px;
-
 }
 
 .btn {
@@ -57,8 +60,7 @@ body {
     font-style: normal;
     font-weight: 400;
     margin: 30px auto 0 0;
-    padding: 15px 41px 16px;
-    color: #ffffff;
+    padding: 17px 41px 18px;
     border-radius: 50px;
     cursor: pointer;
     margin-top: 30px;
@@ -77,34 +79,7 @@ body {
     color: #ff5416;
 }
 
-.btn-orange {
-    border: 1px solid #ff5416;
-    background: #ffffff;
-    color: #ff5416;
-    transition: all 0.3s ease;
-    display: block;
-    margin: 52px auto 60px;
-}
-
-.btn-orange:hover {
-    border: 1px solid #ff5416;
-    background: #ff5416;
-    color: #ffffff;
-    padding: 16px 45px 17px;
-}
-
-.btn-black {
-    border: none;
-    background: #ff5416;
-    color: white;
-    transition: all 0.3s ease;
-}
-
-.btn-black:hover {
-    border: none;
-    background: #000000;
-}
-
+/* Styling About Us Section */
 .aboutus h5 {
     width: 139px;
     letter-spacing: 4px;
@@ -135,7 +110,7 @@ body {
     background-color: #ff5416;
     border-radius: 20px;
     padding: 20px 30px 40px;
-    width: 300px;
+    width: 270px;
 }
 
 .aboutus .services h4 {
@@ -171,14 +146,30 @@ body {
     gap: 10px;
 }
 
-.digitalmark {
+.btn-orange {
+    border: 1px solid #ff5416;
+    background: #ffffff;
+    color: #ff5416;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 50px auto 65px;
+}
+
+.btn-orange:hover {
+    border: 1px solid #ff5416;
+    background: #ff5416;
+    color: #ffffff;
+}
+
+/* Styling Marketing Section */
+.marketing {
     background-image: url(./images/digitalmarknr.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 120px 0 120px 20%;
+    padding: 120px 15px 120px 18%;
 }
 
-.digitalmark .colored-circle {
+.marketing .colored-circle {
     width: 58px;
     height: 58px;
     margin: 0 auto 0 0;
@@ -187,21 +178,34 @@ body {
     border-radius: 50%;
 }
 
-.digitalmark h2 {
+.marketing h2 {
     font-size: 3.75rem;
     font-weight: 700;
     margin: 27px 0 0;
-    line-height: 1.1;
+    line-height: 1.15;
     max-width: 400px;
 }
 
-.digitalmark p {
+.marketing p {
     font-size: 1.25rem;
     line-height: 2;
     margin: 27px 0 0;
     color: #111111;
     max-width: 350px;
 }
+
+.btn-black {
+    border: none;
+    background: #ff5416;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-black:hover {
+    border: none;
+    background: #000000;
+}
+
 
 button.contact {
     border-style: none;
@@ -223,24 +227,25 @@ button.contact {
     line-height: 1..1;
 }
 
-.designs {
-    padding: 100px 20px;
+/* Styling Design Section */
+.design {
+    padding: 100px 30px;
 }
 
-.designs h2 {
+.design h2 {
     font-size: 3.75rem;
-    margin: 60px 0px 70px 0;
-    line-height: 1.1;
+    margin: 60px 0px 70px 30px;
+    line-height: 1.2;
     font-weight: 700;
     color: #000000;
     max-width: 600px;
 }
 
-.designs h2 span {
+.design h2 span {
     color: #ff5416;
 }
 
-.designs .design-cont {
+.design .design-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -248,7 +253,7 @@ button.contact {
     gap: 25px;
 }
 
-.designs .design-box {
+.design .design-box {
     background-image: linear-gradient(to right, #ff875c, #ff5416);
     border-radius: 20px;
     padding: 20px;
@@ -256,13 +261,13 @@ button.contact {
     align-items: center;
     gap: 25px;
     width: 700px;
-    max-width: 90%;
+    max-width: 93%;
     line-height: 1.8;
     font-size: 1.125rem;
     color: #ffffff;
 }
 
-.designs .design-number {
+.design .design-number {
     font-size: 3rem;
     font-weight: 700;
     margin: 0 auto;
@@ -293,7 +298,7 @@ button.contact {
     color: #ffffff;
 }
 
-.team .img-cont {
+.team .img-container {
     width: 266px;
     height: 266px;
     background-image: url(//images02.nicepage.com/c461c07…/d47fa03…/dg.jpg);
@@ -301,7 +306,8 @@ button.contact {
     margin: 0 auto;
 }
 
-.form-section {
+/* Styling Contact Section */
+.contact-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -309,20 +315,22 @@ button.contact {
     gap: 50px;
 }
 
-.form-section h3 {
-    font-size: 3rem;
-    font-weight: 700;
-    text-transform: none;
-    margin: 0 auto;
-    line-height: 1.2;
-    margin-left: 20%;
-    /* text-align: center; */
+.form-container {
+    width: 600px;
 }
 
-form {
+.form {
     padding: 20px;
     width: 100%;
-    min-width: 500px;
+}
+
+.contact-section h3 {
+    font-size: 2.75rem;
+    font-weight: 700;
+    text-transform: none;
+    margin: 0 auto 50px;
+    line-height: 1.2;
+    text-align: center;
 }
 
 label {
@@ -372,7 +380,7 @@ textarea {
     color: #888888;
 }
 
-.form-section .check-box {
+.contact-section .check-box {
     display: flex;
 }
 
@@ -389,6 +397,11 @@ textarea {
     padding: 15px 20px;
     letter-spacing: 1px;
     font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #ff5416c1;
 }
 
 .form-pic-box {
@@ -403,6 +416,7 @@ textarea {
     height: 100%;
 }
 
+/* Styling Contact Info Section */
 .contact-info {
     display: flex;
     justify-content: center;
@@ -440,9 +454,9 @@ textarea {
     margin: 20px 0 0;
     line-height: 1.8;
     font-size: 1.125rem;
-    /* max-width: 200px; */
 }
 
+/* Styling Footer Section */
 footer {
     color: #ffffff;
     background-color: #333333;
@@ -463,145 +477,149 @@ footer a:hover {
 
 
 /* Responsiveness */
+
 @media screen and (max-width:1024px) {
-    .form-section {
+    /* Styling Company Section */
+    .company-box {
+        padding-left: 20%;
+    }
+
+    .company h3{
+        font-size: 1.5rem;
+    }
+
+    .company h1 {
+        font-size: 6rem;
+        text-transform: capitalize;
+    }
+
+    /* Styling About Us Section */
+    .aboutus .services-box {
+        flex-wrap: wrap;
+        padding: 20px 30px;
+    }
+
+    .aboutus .services {
+        width: 300px
+    }
+
+    /* Styling Marketing Section */
+    .marketing {
+        padding-left: 15%;
+    }
+    
+    /* Styling Design Section */
+    .design .design-container {
+        align-items: center;
+    }
+
+    /* Styling Contact Section */
+    .contact-section {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 100%;
     }
 
-    form {
-        display: block;
-        width: 100px;
+    .form-container {
         max-width: 100%;
-        /* margin: 0 auto; */
-        min-width: 300px;
     }
 
     .form-pic-box {
         max-width: 100%;
     }
 
-    .abot h1 {
-        font-size: 6rem;
-        line-height: 1;
-        text-transform: capitalize;
-    }
-
-    .abot h3{
-        font-size: 1.5rem;
-    }
-
-    .abot-box {
-        padding-left: 20%;
-    }
-
-    .aboutus .services-box {
-        flex-wrap: wrap;
-        padding: 20px 30px;
-    }
-
-    .digitalmark {
-        padding-left: 15%;
-    }
-
-    .designs .design-cont {
-        align-items: center;
-    }
-
-    .designs .design-box {
-        
-    }
-
 }
 
 @media screen and (max-width:768px) {
-    .abot h1 {
-        font-size: 4.875rem;
-        line-height: 1;
-        text-transform: capitalize;
-    }
-
-    .abot-box {
+    /* Styling Company Section */
+    .company-box {
         padding-left: 10%;
     }
 
+    .company h1 {
+        font-size: 4.875rem;
+    }
+
+    /* Styling About Us Section */
     .aboutus h2 {
         font-size: 3rem;
         max-width: 500px;
     }
 
-    .digitalmark h2 {
+    /* Styling Marketing Section */
+    .marketing {
+        padding-left: 10%;
+    }
+   
+    .marketing h2 {
         font-size: 2.25rem;
     }
 
-    .digitalmark p {
+    .marketing p {
         font-size: 1.125rem;
     }
 
-    .digitalmark {
-        padding-left: 10%;
-    }
-
-    .designs h2 {
+    /* Styling Design Section */
+    .design h2 {
         font-size: 3rem;
+        max-width: 500px;
+        margin: 60px auto 70px auto;
         text-align: center;
-        max-width: 450px;
-        margin-left: auto;
-        margin-right: auto;
     }
 
-    .form-section h3 {
+     /* Styling Contact Section */
+    .contact-section h3 {
         margin-left: unset;
-        /* word-break: normal; */
-        /* font-size: 2.5rem; */
+        font-size: 2.25rem;
    }
 
 }
 
-@media screen and (max-width:570px) {
-    .abot h1 {
-        font-size: 3.4375rem;
-        line-height: 1;
-        text-transform: capitalize;
-    }
-
-    .abot h3 {
-        font-size: 1rem;
-        line-height: 1;
-    }
-
-    .abot-box {
+@media screen and (max-width:576px) {
+    /* Styling Company Section */
+    .company-box {
         padding-left: 5%;
     }
-
-    .aboutus h2 {
-        font-size: 1.875rem;
+    
+    .company h1 {
+        font-size: 3.4375rem;
         max-width: 300px;
     }
 
-    .digitalmark {
-        padding-left: 7%;
+    .company h3 {
+        font-size: 1rem;
     }
 
-    .designs .design-box {
+    /* Styling About Us Section */
+    .aboutus h2 {
+        font-size: 1.875rem;
+        max-width: 300px;
+        margin: 60px auto 70px auto;
+    }
+
+    /* Styling Marketing Section */
+    .marketing {
+        padding-left: 8%;
+    }
+
+    /* Styling Design Section */
+    .design h2 {
+        font-size: 2.25rem;
+        max-width: 350px;
+    }
+
+    .design .design-box {
         width: 340px;
         flex-direction: column;
-        align-items: flex-end;
-        justify-content: flex-end;
     }
 
-    .designs .design-number {
-        align-self: flex-start;
-        margin-right: auto;
+    /* Styling Contact Section */
+    .form {
+        padding: 0;
     }
 
-    .designs h2 {
-        font-size: 2.25rem;
-        text-align: center;
-        max-width: 350px;
-        margin-left: auto;
-        margin-right: auto;
+    .contact-section h3 {
+        font-size: 1.875rem;
     }
+
 }
